@@ -6407,3 +6407,20 @@ body > * {
   .animate-in-right.out-of-viewport {
     opacity: 0;
     left: 5%; }
+
+    
+.img-animation {
+  transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  position: relative; /* Permite usar z-index */
+  z-index: 1; /* Posición inicial */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+
+}
+
+/* Efecto al pasar el cursor */
+.img-animation:hover {
+  transform: scale(1.7); /* Aumenta el tamaño un 10% */
+  z-index: 10; /* Coloca la imagen por encima de las demás */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
